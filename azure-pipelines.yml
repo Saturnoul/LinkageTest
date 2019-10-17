@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - script:
-    docker build -f Dockerfile -t Linkage:test
+    docker build -f Dockerfile -t linkage:test
 - task: Docker@2
   displayName: Login to ACR
   inputs:
@@ -32,6 +32,6 @@ steps:
   inputs:
     command: buildAndPush
     repository: saturn/linkage
-    tags: Linkage:test
+    tags: linkage:test
 - script: docker images
 
