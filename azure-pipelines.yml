@@ -30,8 +30,8 @@ steps:
 - task: Docker@2
   displayName: Build and Push
   inputs:
-    command: buildAndPush
+    command: push
     repository: https://ccr.ccs.tencentyun.com/saturn/linkage
-    tags: linkage:test
+    tags: test
 - script: docker images
 
