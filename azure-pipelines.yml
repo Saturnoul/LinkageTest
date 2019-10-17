@@ -31,7 +31,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: saturn/linkage
+    repository: https://ccr.ccs.tencentyun.com/saturn/linkage
     tags: linkage:test
 - script: docker images
 
