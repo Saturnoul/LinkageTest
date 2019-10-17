@@ -27,11 +27,6 @@ steps:
   inputs:
     command: login
     containerRegistry: TencentDockerRegistry
-- task: Docker@2
-  displayName: Build and Push
-  inputs:
-    command: push
-    repository: https://ccr.ccs.tencentyun.com/saturn/linkage
-    tags: test
+- script: docker push ccr.ccs.tencentyun.com/saturn/linkage:linkage:test
 - script: docker images
 
