@@ -21,13 +21,5 @@ steps:
 #    testResultsFiles: '**/surefire-reports/TEST-*.xml'
 #    goals: 'package'
 - script:
-    docker build -f Dockerfile -t linkage:test .
-- task: Docker@2
-  displayName: Login to ACR
-  inputs:
-    command: login
-    containerRegistry: TencentDockerRegistry
-- script: docker tag linkage:test ccr.ccs.tencentyun.com/saturn/linkage:test\n
-    docker push ccr.ccs.tencentyun.com/saturn/linkage:test\n
-    docker images\n
+    sh build.sh
 
