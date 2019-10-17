@@ -27,7 +27,7 @@ steps:
   inputs:
     command: login
     containerRegistry: TencentDockerRegistry
-- script: docker tag linkage:test ccr.ccs.tencentyun.com/saturn/linkage:linkage:test
-- script: docker push ccr.ccs.tencentyun.com/saturn/linkage:linkage:test
+- script: docker tag linkage:test ccr.ccs.tencentyun.com/saturn/linkage:test
+- script: docker push ccr.ccs.tencentyun.com/saturn/linkage:test
 - script: docker images
 
