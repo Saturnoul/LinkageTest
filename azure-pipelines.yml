@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 #- script:
 #    sh build.sh
-- script: docker build -t registry-vpc.cn-shanghai.aliyuncs.com/saturnluo/linkage:test
+- script: docker build -t registry-vpc.cn-shanghai.aliyuncs.com/saturnluo/linkage:test .
 - task: Docker@2
   displayName: Push
   inputs:
