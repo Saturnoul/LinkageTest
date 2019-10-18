@@ -29,7 +29,7 @@ steps:
     command: push
     containerRegistry: AliDockerRegistry
     repository: registry-vpc.cn-shanghai.aliyuncs.com/saturnluo/linkage
-    tags: registry-vpc.cn-shanghai.aliyuncs.com/saturnluo/linkage
+    tags: registry-vpc.cn-shanghai.aliyuncs.com/saturnluo/linkage:test
 - task: SSH@0
   inputs:
     sshEndpoint: TencentServer
