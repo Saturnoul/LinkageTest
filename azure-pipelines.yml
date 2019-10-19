@@ -37,21 +37,21 @@ pool:
 
 
 steps:
-  - task: Maven@3
-    inputs:
-      mavenPomFile: 'pom.xml'
-      mavenOptions: '-Xmx3072m'
-      javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '1.8'
-      jdkArchitectureOption: 'x64'
-      publishJUnitResults: true
-      testResultsFiles: '**/surefire-reports/TEST-*.xml'
-      goals: 'package'
-  - task: CopyFilesOverSSH@0
-    inputs:
-      sshEndpoint: TencentServer
-      contents: target/linkage-0.0.1-SNAPSHOT.jar
-      targetFolder: /home/saturn/script/
+#  - task: Maven@3
+#    inputs:
+#      mavenPomFile: 'pom.xml'
+#      mavenOptions: '-Xmx3072m'
+#      javaHomeOption: 'JDKVersion'
+#      jdkVersionOption: '1.8'
+#      jdkArchitectureOption: 'x64'
+#      publishJUnitResults: true
+#      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+#      goals: 'package'
+#  - task: CopyFilesOverSSH@0
+#    inputs:
+#      sshEndpoint: TencentServer
+#      contents: target/linkage-0.0.1-SNAPSHOT.jar
+#      targetFolder: /home/saturn/script/
   - task: SSH@0
     inputs:
       sshEndpoint: TencentServer
