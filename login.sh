@@ -6,5 +6,5 @@ set timeout 3
 #interact
 spawn docker login --username=saturnluohao registry.cn-shanghai.aliyuncs.com
 expect "Password:"
-send "cmhdbwsngp6"
+send "cmhdbwsngp6\r"
 interact
