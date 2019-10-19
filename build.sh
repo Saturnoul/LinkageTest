@@ -1,6 +1,6 @@
 #!/bin/bash
 docker build -f Dockerfile -t linkage:test .
-sudo apt-get install -y expect
+#sudo apt-get install -y expect
 #expect login.sh
 sudo docker login --username=saturnluohao registry.cn-shanghai.aliyuncs.com --password=cmhdbwsngp6
 #docker tag linkage:test ccr.ccs.tencentyun.com/saturn/linkage:test
