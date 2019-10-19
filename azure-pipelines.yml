@@ -23,7 +23,7 @@ steps:
 #    testResultsFiles: '**/surefire-reports/TEST-*.xml'
 #    goals: 'package'
 - script:
-    sh build_Tencent.sh
+    sh build_Ali.sh
 - task: SSH@0
   inputs:
     sshEndpoint: TencentServer
