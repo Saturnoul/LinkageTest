@@ -22,15 +22,15 @@ jobs:
       publishJUnitResults: true
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-#- script:
-#    sh build.sh
-- job:
-  steps:
-  - task: CopyFilesOverSSH@0
-    inputs:
-      sshEndpoint:TencentServer
-      contents: target/linkage-0.0.1-SNAPSHOT.jar
-      targetFolder: /home/saturn/script/
+- script:
+    sh build.sh
+#- job:
+#  steps:
+#  - task: CopyFilesOverSSH@0
+#    inputs:
+#      sshEndpoint:TencentServer
+#      contents: target/linkage-0.0.1-SNAPSHOT.jar
+#      targetFolder: /home/saturn/script/
 
   - task: SSH@0
     inputs:

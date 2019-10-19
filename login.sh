@@ -3,7 +3,7 @@
 #expect "*Password:"
 #send "@cmhdb_wsngp6\r"
 #interact
-spawn docker login --username=saturnluohao registry-vpc.cn-shanghai.aliyuncs.com
-expect "Password:"
-send "cmhdbwsngp6\r"
-interact
+#spawn docker login --username=saturnluohao registry-vpc.cn-shanghai.aliyuncs.com
+#expect "Password:"
+#send "cmhdbwsngp6\r"
+#interact
