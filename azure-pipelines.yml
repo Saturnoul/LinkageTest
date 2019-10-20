@@ -25,7 +25,7 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: TencentServer
-    commands: sh /home/saturn/script/pr.sh
+    commands: sh /home/saturn/script/registry.sh
 
 
 
