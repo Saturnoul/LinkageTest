@@ -8,5 +8,7 @@
 
 
 docker build -f Dockerfile -t linkage:latest .
+docker images
 docker tag linkage:latest www.saturnluo.cn/linkage:latest
+docker images
 docker push www.saturnluo.cn/linkage:latest
