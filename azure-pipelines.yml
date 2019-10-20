@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - script:
-    sh Deploy/build.sh
+    sh deploy_script/build.sh
 - task: SSH@0
   inputs:
     sshEndpoint: TencentServer
