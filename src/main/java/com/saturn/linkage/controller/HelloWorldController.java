@@ -9,6 +9,6 @@ public class HelloWorldController {
 
     @RequestMapping("hello")
     public String sayHello(){
-        return "This time print something different!";
+        return "I have to say that the docker hub is really fantatic!";
     }
 }
